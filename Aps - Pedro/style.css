@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Sarala:wght@400;700&display=swap");
+
+:root {
+  --letter-color: #026937;
+  --gradiente-escuro-claro: #026937, #76b927;
+  --gradiente-claro-escuro: rgb(118, 185, 39), rgb(2, 105, 55);
+  --background: #e5e5e5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  font-family: Sarala;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: end;
+  gap: 25px;
+  margin: 35px 100px 5px 5px;
+}
+
+nav li {
+  position: relative;
+}
+
+nav li:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(
+    90deg,
+    rgb(2, 105, 55) 15%,
+    rgb(118, 185, 39) 50%
+  );
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+nav li:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+nav a {
+  color: var(--letter-color);
+}
+
+hr {
+  margin-top: 25px;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgb(2, 105, 55) 15%,
+    rgb(118, 185, 39) 50%
+  );
+}
+
+#cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cabecalho img {
+    width: 30%;
+}
+
+#cabecalho p{
+    color: var(--letter-color);
+    margin-top: -3%;    
+}
+
+.btn {
+    width: 180px;
+    height: 60px;
+    border-radius: 20px;
+    font-size: 15px;
+    cursor: pointer;
+    border: 1px solid white;
+    outline: none;
+    transition: 1s ease-in-out;
+    background-color: var(--letter-color);
+    color: white;
+    margin-top: 15px;
+  }
+  
+  .btn:hover {
+    transition: 1s ease-in-out;
+    background:#23a712d8;
+    color: white;
+    width: 200px;
+  }
