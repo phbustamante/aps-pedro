@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Sarala:wght@400;700&display=swap");
+
+:root {
+  --letter-color: #026937;
+  --gradiente-escuro-claro: #026937, #76b927;
+  --gradiente-claro-escuro: rgb(118, 185, 39), rgb(2, 105, 55);
+  --background: #e5e5e5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  font-family: Sarala;
+}
+
+.containerInicial {
+  height: 90vh;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: end;
+  gap: 25px;
+  margin: 35px 100px 5px 5px;
+}
+
+nav li {
+  position: relative;
+}
+
+nav li:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(
+    90deg,
+    rgb(2, 105, 55) 15%,
+    rgb(118, 185, 39) 50%
+  );
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+nav li:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+nav a {
+  color: var(--letter-color);
+}
+
+hr {
+  margin-top: 25px;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgb(2, 105, 55) 15%,
+    rgb(118, 185, 39) 50%
+  );
+}
+
+#cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cabecalho img {
+    width: 25%;
+}
+
+#cabecalho p{
+    color: var(--letter-color);
+    margin-top: -3%;    
+}
+
+.btn {
+    width: 180px;
+    height: 60px;
+    border-radius: 20px;
+    font-size: 15px;
+    cursor: pointer;
+    border: 1px solid white;
+    outline: none;
+    transition: 1s ease-in-out;
+    background-color: var(--letter-color);
+    color: white;
+    margin-top: 25px;
+  }
+  
+  .btn:hover {
+    transition: 1s ease-in-out;
+    background:#23a712d8;
+    color: white;
+    width: 200px;
+  }
+  .container {
+    text-align: center; 
+    margin-top: 80px;
+}
+
+  #minhaLinha {
+    margin: 0 auto;
+    width: 276.036px;
+    height: 0.4px;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(
+      to right,
+      rgb(2, 105, 55) 15%,
+      rgb(118, 185, 39) 50%
+    );
+  }
+  #cabecalho-baixo {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    font-family: Sarala;
+  }
+  
+    ul {
+      width: 1150px;
+    }
+
+#cabecalho-baixo-negrito {
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;   
+
+    
+}
+#cabecalho-baixo-negrito p{
+  color: var(--letter-color);
+  margin-top: 0%;    
+}
+
+#cabecalho-baixo-normal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--letter-color);
+  margin-top: -3%;   
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  font-family: Sarala;
+  font-size: 12px;
+ 
+}
+
+.texto-baixo {
+  padding-top: 50px !important;
+}
+
+.about{
+  background-color: #e5e5e5;
+  overflow: hidden;
+  color: #034123;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 34px 14px 64px 14px;
+
+  
+}
+.about-content div{
+  flex: 1;
+}
+.about-description h2{
+    font-size: 38px;
+    margin-bottom: 24px;
+}
+
+.about-description p{
+    line-height: 150%;
+    margin: 0 100px 55px 10px;
+}
+
+#Quem-somos img {
+  width: 50%;
+  margin-left: 150px;
+}
+
+footer {
+  
+}
