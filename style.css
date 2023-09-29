@@ -1,4 +1,31 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Sarala:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: white;
+}
+
+svg {
+  width: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
 
 :root {
   --letter-color: #026937;
@@ -41,11 +68,7 @@ nav li:after {
   height: 2px;
   bottom: 0;
   left: 0;
-  background: linear-gradient(
-    90deg,
-    rgb(2, 105, 55) 15%,
-    rgb(118, 185, 39) 50%
-  );
+  background: linear-gradient(90deg, rgb(2, 105, 55) 15%, rgb(118, 185, 39) 50%);
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -63,90 +86,82 @@ hr {
   margin-top: 25px;
   border: 0;
   height: 1px;
-  background-image: linear-gradient(
-    to right,
-    rgb(2, 105, 55) 15%,
-    rgb(118, 185, 39) 50%
-  );
+  background-image: linear-gradient(to right, rgb(2, 105, 55) 15%, rgb(118, 185, 39) 50%);
 }
 
 #cabecalho {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #cabecalho img {
-    width: 25%;
+  width: 25%;
 }
 
-#cabecalho p{
-    color: var(--letter-color);
-    margin-top: -3%;    
+#cabecalho p {
+  color: var(--letter-color);
+  margin-top: -3%;
 }
 
 .btn {
-    width: 180px;
-    height: 60px;
-    border-radius: 20px;
-    font-size: 15px;
-    cursor: pointer;
-    border: 1px solid white;
-    outline: none;
-    transition: 1s ease-in-out;
-    background-color: var(--letter-color);
-    color: white;
-    margin-top: 25px;
-  }
-  
-  .btn:hover {
-    transition: 1s ease-in-out;
-    background:#23a712d8;
-    color: white;
-    width: 200px;
-  }
-  .container {
-    text-align: center; 
-    margin-top: 80px;
+  width: 180px;
+  height: 60px;
+  border-radius: 20px;
+  font-size: 15px;
+  cursor: pointer;
+  border: 1px solid white;
+  outline: none;
+  transition: 1s ease-in-out;
+  background-color: var(--letter-color);
+  color: white;
+  margin-top: 25px;
 }
 
-  #minhaLinha {
-    margin: 0 auto;
-    width: 276.036px;
-    height: 0.4px;
-    border: 0;
-    height: 1px;
-    background-image: linear-gradient(
-      to right,
-      rgb(2, 105, 55) 15%,
-      rgb(118, 185, 39) 50%
-    );
-  }
-  #cabecalho-baixo {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: none;
-    text-decoration: none;
-    font-family: Sarala;
-  }
-  
-    ul {
-      width: 1150px;
-    }
+.btn:hover {
+  transition: 1s ease-in-out;
+  background: rgba(35, 167, 18, 0.8470588235);
+  color: white;
+  width: 200px;
+}
+
+.container {
+  text-align: center;
+  margin-top: 80px;
+}
+
+#minhaLinha {
+  margin: 0 auto;
+  width: 276.036px;
+  height: 0.4px;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgb(2, 105, 55) 15%, rgb(118, 185, 39) 50%);
+}
+
+#cabecalho-baixo {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  font-family: Sarala;
+}
+
+ul {
+  width: 1150px;
+}
 
 #cabecalho-baixo-negrito {
-  
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-weight: bold;   
-
-    
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
 }
-#cabecalho-baixo-negrito p{
+
+#cabecalho-baixo-negrito p {
   color: var(--letter-color);
-  margin-top: 0%;    
+  margin-top: 0%;
 }
 
 #cabecalho-baixo-normal {
@@ -154,7 +169,7 @@ hr {
   flex-direction: column;
   align-items: center;
   color: var(--letter-color);
-  margin-top: -3%;   
+  margin-top: -3%;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -162,14 +177,13 @@ hr {
   text-decoration: none;
   font-family: Sarala;
   font-size: 12px;
- 
 }
 
 .texto-baixo {
   padding-top: 50px !important;
 }
 
-.about{
+.about {
   background-color: #e5e5e5;
   overflow: hidden;
   color: #034123;
@@ -181,20 +195,20 @@ hr {
   justify-content: center;
   gap: 14px;
   padding: 34px 14px 64px 14px;
-
-  
 }
-.about-content div{
+
+.about-content div {
   flex: 1;
 }
-.about-description h2{
-    font-size: 38px;
-    margin-bottom: 24px;
+
+.about-description h2 {
+  font-size: 38px;
+  margin-bottom: 24px;
 }
 
-.about-description p{
-    line-height: 150%;
-    margin: 0 100px 55px 10px;
+.about-description p {
+  line-height: 150%;
+  margin: 0 100px 55px 10px;
 }
 
 #Quem-somos img {
@@ -202,6 +216,58 @@ hr {
   margin-left: 150px;
 }
 
-footer {
-  oi
+.serviços {
+  background-color: #e5e5e5;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 54px 14px;
+}
+
+.serviços-content h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 38px;
+  margin-bottom: 14px;
+}
+
+.serviços-content p {
+  line-height: 150%;
+  margin-bottom: 14px;
+  text-align: center;
+  max-width: 780px;
+}
+
+#trabalhos {
+  text-align: center; /* Centraliza o conteúdo na horizontal */
+  height: 650px;
+}
+
+#trabalhos .trabalho {
+  display: inline-block; /* Exibe os elementos em linha */
+  margin: 10px; /* Espaçamento entre os elementos */
+  vertical-align: top; /* Alinha os elementos ao topo */
+  width: calc(30.33% - 20px); /* Define a largura de cada elemento (ajuste conforme necessário) */
+  box-sizing: border-box; /* Garante que a largura inclua padding e borda */
+}
+
+#trabalhos .trabalho img {
+  max-width: 100%; /* Garante que as imagens não ultrapassem a largura da div principal */
+}
+
+#trabalhos .trabalho-info strong {
+  display: block; /* Faz com que o título ocupe toda a largura disponível */
+  margin-top: 10px; /* Espaçamento superior */
+  font-weight: bold; /* Define a fonte em negrito */
+}
+
+#trabalhos .trabalho-info {
+  text-align: center; /* Centraliza o texto */
+  padding: 10px; /* Espaçamento interno */
+}
+
+#trabalhos .trabalho img {
+  max-width: 100%; /* Garante que as imagens não ultrapassem a largura da div principal */
 }
