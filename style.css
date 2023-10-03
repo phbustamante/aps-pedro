@@ -218,7 +218,7 @@ ul {
 
 .serviços {
   background-color: #e5e5e5;
-  color: black;
+  color: #76b927;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -231,6 +231,7 @@ ul {
   text-align: center;
   font-size: 38px;
   margin-bottom: 14px;
+  color: #034123;
 }
 
 .serviços-content p {
@@ -261,6 +262,7 @@ ul {
   display: block; /* Faz com que o título ocupe toda a largura disponível */
   margin-top: 10px; /* Espaçamento superior */
   font-weight: bold; /* Define a fonte em negrito */
+  color: #226920;
 }
 
 #trabalhos .trabalho-info {
@@ -270,4 +272,17 @@ ul {
 
 #trabalhos .trabalho img {
   max-width: 100%; /* Garante que as imagens não ultrapassem a largura da div principal */
+}
+
+#parcerias {
+  text-align: left;
+  max-width: 100%; 
+}
+
+.parcerias-content img {
+  margin left: 130px;
+  display: inline-block; /* Alinhar as imagens lado a lado */
+  width: 100px; /* Definir a largura das imagens (ajuste o valor conforme necessário) */
+  height: auto; /* Manter a proporção original da imagem */
+  margin: 0 10px; /* Adicionar espaçamento horizontal entre as imagens */
 }
