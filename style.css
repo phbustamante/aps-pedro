@@ -1,5 +1,12 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Sarala:wght@400;700&display=swap");
+@media screen and (max-width: 768px) {
+
+}
+@media screen and (min-width: 769px) {
+
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -214,6 +221,8 @@ ul {
 #Quem-somos img {
   width: 50%;
   margin-left: 150px;
+  max-width: 100%;
+  height: auto;
 }
 
 .serviços {
@@ -272,17 +281,17 @@ ul {
 
 #trabalhos .trabalho img {
   max-width: 100%; /* Garante que as imagens não ultrapassem a largura da div principal */
+  height: auto;
 }
 
-#parcerias {
-  text-align: left;
-  max-width: 100%; 
+#Parcerias {
+  margin-top: 5%;
+  align-items: center;
 }
 
 .parcerias-content img {
-  margin left: 130px;
-  display: inline-block; /* Alinhar as imagens lado a lado */
-  width: 100px; /* Definir a largura das imagens (ajuste o valor conforme necessário) */
-  height: auto; /* Manter a proporção original da imagem */
-  margin: 0 10px; /* Adicionar espaçamento horizontal entre as imagens */
+  width: 130px; /* Definir a largura das imagens (ajuste o valor conforme necessário) */
+  margin-inline-start: 5%;
+  height: auto;
+  max-width: 100%;
 }
