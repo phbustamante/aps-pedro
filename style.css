@@ -295,3 +295,10 @@ ul {
   height: auto;
   max-width: 100%;
 }
+#parcerias h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 38px;
+  margin-bottom: 14px;
+  color: #034123;
+}
